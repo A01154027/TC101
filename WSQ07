@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int x,y;
+int r=0;
+void sum (int x, int y)
+{
+  while (x<=y)
+  {
+    r=r+x;
+    x++;
+  }
+}
+int main ()
+{
+  cout<<"I am going to calculate the sum of the integers in the given range you provide."<<endl;
+  cout<<"Please, enter the lowest value in the range.";
+  cin>>x;
+  cout<<"Please, enter the highest value in the range.";
+  cin>>y;
+  if (x<=y)
+  {
+    sum (x,y);
+  }else
+  {
+    cout<<"We need to change the values around.";
+    sum (y,x);
+  }
+  cout<<endl;
+  cout<<"The sum is:"<<r<<endl;
+  return 0;
+}
