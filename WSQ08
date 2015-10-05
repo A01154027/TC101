@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int sum (int x, int y) {
+  return x+y;
+}
+int difference (int x, int y) {
+  return x-y;
+}
+int product (int x, int y) {
+  return x*y;
+}
+int division (int x, int y) {
+  return x/y;
+}
+int reminder (int x, int y) {
+  return x%y;
+}
+int main () {
+  int x;
+  int y;
+  cout<<"Give me a number."<<endl;
+  cin>> x;
+  cout<<"Give me another number."<<endl;
+  cin>> y;
+  cout<<"The sum is:"<<sum (x,y)<<endl;
+  cout<<"The difference is:"<<difference (x,y)<<endl;
+  cout<<"The product is:"<<product (x,y)<<endl;
+  cout<<"The division is:"<<division (x,y)<<endl;
+  cout<<"The reminder is:"<<reminder (x,y)<<endl;
+  return 0;
+}
