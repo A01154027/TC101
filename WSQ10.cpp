@@ -3,7 +3,7 @@
 using namespace std;
 
 int main (){
-  float array [0];
+  float array [10];
   float sum = 0;
   float average;
   int i;
